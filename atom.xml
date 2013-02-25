@@ -4,7 +4,7 @@
   <title><![CDATA[Cinemaker]]></title>
   <link href="http://cinemaker.us/atom.xml" rel="self"/>
   <link href="http://cinemaker.us/"/>
-  <updated>2013-02-24T20:00:46-07:00</updated>
+  <updated>2013-02-24T20:02:32-07:00</updated>
   <id>http://cinemaker.us/</id>
   <author>
     <name><![CDATA[Duane Johnson]]></name>
@@ -18,7 +18,7 @@
     <link href="http://cinemaker.us/blog/2013/02/24/coming-soon/"/>
     <updated>2013-02-24T19:55:00-07:00</updated>
     <id>http://cinemaker.us/blog/2013/02/24/coming-soon</id>
-    <content type="html"><![CDATA[<p>Coming soon! For the moment, please see http://makerslider.com/ for the latest progress on the Cinemon Stick camera slider.</p>
+    <content type="html"><![CDATA[<p>Coming soon! For the moment, please see <a href="http://makerslider.com/">http://makerslider.com/</a> for the latest progress on the Cinemon Stick camera slider.</p>
 ]]></content>
   </entry>
   
