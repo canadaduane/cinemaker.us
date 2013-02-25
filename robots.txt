@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://canadaduane.github.com/cinemaker/sitemap.xml 
