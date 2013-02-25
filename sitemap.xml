@@ -1,15 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://canadaduane.github.com/cinemaker/blog/archives/</loc>
-        <lastmod>2013-02-24T18:07:38-07:00</lastmod>
+        <loc>http://cinemaker.us/blog/2013/02/24/coming-soon/</loc>
+        <lastmod>2013-02-24T19:57:21-07:00</lastmod>
     </url>
     <url>
-        <loc>http://canadaduane.github.com/cinemaker/</loc>
-        <lastmod>2013-02-24T18:07:38-07:00</lastmod>
+        <loc>http://cinemaker.us/404.html</loc>
+        <lastmod>2013-02-24T19:52:37-07:00</lastmod>
     </url>
     <url>
-        <loc>http://canadaduane.github.com/cinemaker/robots.txt</loc>
-        <lastmod>2013-02-24T18:07:38-07:00</lastmod>
+        <loc>http://cinemaker.us/blog/archives/</loc>
+        <lastmod>2013-02-24T19:57:21-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/</loc>
+        <lastmod>2013-02-24T19:57:21-07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/robots.txt</loc>
+        <lastmod>2013-02-24T19:45:58-07:00</lastmod>
     </url>
 </urlset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: announcements | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/announcements/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-02-24T19:57:29-07:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[coming-soon]]></title>
+    <link href="http://cinemaker.us/blog/2013/02/24/coming-soon/"/>
+    <updated>2013-02-24T19:55:00-07:00</updated>
+    <id>http://cinemaker.us/blog/2013/02/24/coming-soon</id>
+    <content type="html"><![CDATA[<p>Coming soon! For the moment, please see http://makerslider.com/ for the latest progress on the Cinemon Stick camera slider.</p>
+]]></content>
+  </entry>
+  
+</feed>
