@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hardware | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/hardware/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-03-17T17:25:28-06:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Ondes Martenot]]></title>
+    <link href="http://cinemaker.us/2013/02/the-ondes-martenot/"/>
+    <updated>2013-02-11T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/02/the-ondes-martenot</id>
+    <content type="html"><![CDATA[<p><img src="/images/2013-02/ondes-martenot.jpg" alt="" /></p>
+
+<p>I’ve been racking my brains for the past couple of weeks trying to figure out a way to make a "sliding potentiometer" the full length of the cinemaker pocket dolly. Today, after one lucky email exchange, I have a cost effective solution that sounds like music to my ears.</p>
+
+<p>In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):</p>
+
+<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p>
+
+<p> 
+|====================aluminum======================| 1 meter<br/>
+sensor>           [knob]            [knob]</p>
+
+<p>Basically, I want to recreate the functionality of a double "slide potentiometer" but the slide is 1m long. Each of the "[knob]" things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
+
+<p>I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads "tick" marks along the bottom, or a "spring-loaded" coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.</p>
+
+<p>The cheapest method seems to be ultrasonic sensors (see <a href="/images/2013-02/ondes-martenot.jpg">1</a>), however I don’t want wires dangling. One way to avoid power and wires to the knobs is if I mount one tranceiver on the end of the aluminum extrusion (as pictured above). However, then the problem is that the sensor detects the BAR ITSELF and says "hey something is really close". I could get around this by mounting 2 more ultrasonic tranceivers–one at each of the sliding knobs I want to measure. In this scenario, instead of sending and receiving the ultrasonic pulse from the same location, I could break it up and send at the knob and receive at the end of the aluminum extrusion. If I take this course, however, it means I must send power through wires to ultrasonic transmitters at the knobs.</p>
+
+<p>Again, I don’t want wires hanging about. So I was thinking, as a software engineer is generally wont to do, about computer vision. I could hypothetically mount a camera at one end of the slider (as pictured) and then look for "hot pink" colored knobs. Divide the inverse ratio of non-hot-pink pixels to hot-pink pixels and I would get the absolute<br/>
+distance to the hot pink knobs. This method could work since "hot pink" is not generally found in natural environments (except for my 3 year old daughter’s birthday party…) </p>
+
+<p>The problem with the above solution is that video cameras are a little more expensive than ultrasonic sensors, and much more computationally intensive. So that got me thinking. What if I could coat the knobs with a material that is the "sonic equivalent" of hot pink? Does such a thing exist? Is there a way to detect echoes from various surfaces such that the receiver will ignore certain types of (non-hot-pink) sounds?</p>
+
+<p>I know it’s kind of a crazy analogy, but since I’ve hit a wall with ideas I thought I’d ask for your thoughts. If anyone has any ideas I’d love to hear them.</p></blockquote>
+
+<p>Mason replied:</p>
+
+<blockquote><p>Dare I ask why you wouldn’t use something like what an Ondes Martinot http://en.wikipedia.org/wiki/Ondes_Martenot uses? It seems pretty darn close to "slide potentiometer" in actual function, with the length you desire.</p></blockquote>
+
+<p>"The Ondes Martenot? What the heck is that?" I thought. It turns out that there’s a beautiful instrument invented in the early 20th century that uses a "ring" (the kind of ring you put your finger in) to slide along the length of a keyboard/piano. The position of the ring indicates the pitch of the musical sound. If you’ve ever heard 1950s style "eerie martian music" it was probably an Ondes Martenot.</p>
+
+<p>Shocked and amazed, I went to the wikipedia page to try to figure out how it works. Unfortunately, the technical details were scant. So I turned to google and sure enough, someone has re-created the Ondes Martenot and revealed its secret! Dana Countryman gave this demonstration of his DIY instrument:</p>
+
+<p>So the take-away for me is this: keep the creative ideas flowing, but don’t hesitate to go to a group of knowledgeable people with a seemingly intractable problem–they are bound to drop an OMG why didn’t I think of that? bomb and make life simpler.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Prototype Arduino + grblShield Board]]></title>
+    <link href="http://cinemaker.us/2012/12/prototype-arduino-grblshield-board/"/>
+    <updated>2012-12-30T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/prototype-arduino-grblshield-board</id>
+    <content type="html"><![CDATA[<p>A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for the Arduino. It can convert much higher voltage (up to 40V) but I don’t think I’ll be using that for now :)</p>
+
+<p>When all strapped together, the prototype board is quite a sight (ok, an ‘ugly’ sight if you ask me). It’s kind of cool to be able to put all of these pieces together, though, and get a programmable board that does exactly what’s needed: slide a camera back and forth using a stepper motor at variable speed.</p>
+
+<p>[![][3]][3]</p>
+
+<p>I’m having a bit of trouble getting the potentiometer knob to make a solid connection with the Arduino. As a result, the speed control behaves somewhat “randomly” whenever it samples the potentiometer’s resistance (it’s a 10k ohm pot). I’m hoping that once soldered on a proper PCB board the variability will go away–when I physically clamp the wires together with my fingers, I get a predictable result, for example.</p>
+
+<p>The source code for the modified version of grbl is available here:</p>
+
+<p>This version of grbl basically adds the ability to sample analog pin values (as is needed with the potentiometer) and uses the anolog pins for buttons as well (since all of the digital pins are used up by the grblShield’s XYZ axes).</p>
+]]></content>
+  </entry>
+  
+</feed>

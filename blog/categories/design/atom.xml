@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Design | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/design/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-03-17T17:25:28-06:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Ondes Martenot]]></title>
+    <link href="http://cinemaker.us/2013/02/the-ondes-martenot/"/>
+    <updated>2013-02-11T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/02/the-ondes-martenot</id>
+    <content type="html"><![CDATA[<p><img src="/images/2013-02/ondes-martenot.jpg" alt="" /></p>
+
+<p>I’ve been racking my brains for the past couple of weeks trying to figure out a way to make a "sliding potentiometer" the full length of the cinemaker pocket dolly. Today, after one lucky email exchange, I have a cost effective solution that sounds like music to my ears.</p>
+
+<p>In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):</p>
+
+<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p>
+
+<p> 
+|====================aluminum======================| 1 meter<br/>
+sensor>           [knob]            [knob]</p>
+
+<p>Basically, I want to recreate the functionality of a double "slide potentiometer" but the slide is 1m long. Each of the "[knob]" things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
+
+<p>I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads "tick" marks along the bottom, or a "spring-loaded" coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.</p>
+
+<p>The cheapest method seems to be ultrasonic sensors (see <a href="/images/2013-02/ondes-martenot.jpg">1</a>), however I don’t want wires dangling. One way to avoid power and wires to the knobs is if I mount one tranceiver on the end of the aluminum extrusion (as pictured above). However, then the problem is that the sensor detects the BAR ITSELF and says "hey something is really close". I could get around this by mounting 2 more ultrasonic tranceivers–one at each of the sliding knobs I want to measure. In this scenario, instead of sending and receiving the ultrasonic pulse from the same location, I could break it up and send at the knob and receive at the end of the aluminum extrusion. If I take this course, however, it means I must send power through wires to ultrasonic transmitters at the knobs.</p>
+
+<p>Again, I don’t want wires hanging about. So I was thinking, as a software engineer is generally wont to do, about computer vision. I could hypothetically mount a camera at one end of the slider (as pictured) and then look for "hot pink" colored knobs. Divide the inverse ratio of non-hot-pink pixels to hot-pink pixels and I would get the absolute<br/>
+distance to the hot pink knobs. This method could work since "hot pink" is not generally found in natural environments (except for my 3 year old daughter’s birthday party…) </p>
+
+<p>The problem with the above solution is that video cameras are a little more expensive than ultrasonic sensors, and much more computationally intensive. So that got me thinking. What if I could coat the knobs with a material that is the "sonic equivalent" of hot pink? Does such a thing exist? Is there a way to detect echoes from various surfaces such that the receiver will ignore certain types of (non-hot-pink) sounds?</p>
+
+<p>I know it’s kind of a crazy analogy, but since I’ve hit a wall with ideas I thought I’d ask for your thoughts. If anyone has any ideas I’d love to hear them.</p></blockquote>
+
+<p>Mason replied:</p>
+
+<blockquote><p>Dare I ask why you wouldn’t use something like what an Ondes Martinot http://en.wikipedia.org/wiki/Ondes_Martenot uses? It seems pretty darn close to "slide potentiometer" in actual function, with the length you desire.</p></blockquote>
+
+<p>"The Ondes Martenot? What the heck is that?" I thought. It turns out that there’s a beautiful instrument invented in the early 20th century that uses a "ring" (the kind of ring you put your finger in) to slide along the length of a keyboard/piano. The position of the ring indicates the pitch of the musical sound. If you’ve ever heard 1950s style "eerie martian music" it was probably an Ondes Martenot.</p>
+
+<p>Shocked and amazed, I went to the wikipedia page to try to figure out how it works. Unfortunately, the technical details were scant. So I turned to google and sure enough, someone has re-created the Ondes Martenot and revealed its secret! Dana Countryman gave this demonstration of his DIY instrument:</p>
+
+<p>So the take-away for me is this: keep the creative ideas flowing, but don’t hesitate to go to a group of knowledgeable people with a seemingly intractable problem–they are bound to drop an OMG why didn’t I think of that? bomb and make life simpler.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Toward Cinemaker 2.0: Not ON, but THROUGH]]></title>
+    <link href="http://cinemaker.us/2013/01/toward-cinemaker-2-0-not-on-but-through/"/>
+    <updated>2013-01-20T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/toward-cinemaker-2-0-not-on-but-through</id>
+    <content type="html"><![CDATA[<p>One of my goals for version 2.0 of the MakerSlider (soon to be called Cinemaker Pocket Dolly) was to move the motor from the sled to the end of the makerslide aluminum bar. I had been optimizing a design that would leave room for the 1/4″ timing belt to move underneath the sled (the part of the pocket dolly that I’ve previously been calling a “carriage”). This design would basically look like a thick elastic band on top of the aluminum bar with one end affixed to a motor and the other to an idler with ball bearings.</p>
+
+<div class="gallery">
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg"></a>
+</div>
+
+
+<p>As I worked on the design, however, it soon became clear that it would be so much better if I could somehow tip the motor 90 degrees and attach the timing belt, flat side, on to the sled. As that idea percolated one night, I realized that the makerslide itself could accomodate this if I used the INSIDE of the aluminum as a transport for the timing belt! So, rather than having both sides of the timing belt under the sled, now we can have just one.</p>
+
+<p>The advantages to this design are several:</p>
+
+<ol>
+<li>Easier way to affix the timing belt to the sled: since the belt is oriented with its flat side toward the sled, it’s as easy as squeezing the belt between a fastener and the sled.</li>
+<li>No need to “go around” nuts and bolts under the sled: almost anything that attaches to the sled–such as a ball head or camera–will need to have a nut or bolt sticking through the sled and poking through the bottom. Any design that has a timing belt underneath the carriage will also have to accommodate the position of these nuts and bolts. With the new design, none of this needs to be taken into account since the timing belt can be affixed on each end of the sled.</li>
+<li>Only one moving part: since most of the belt is “hidden” inside the makerslide, the only exterior moving part is the half of the timing belt showing on the upper side.</li>
+</ol>
+
+
+<p>There are also some disadvantages:</p>
+
+<ol>
+<li>It’s harder to get the timing belt in and out of the makerslide. Simply put, you have to get a timing belt with no backbone all the way through a 1-meter-long tube.</li>
+<li>Possibility of “catching” on the edges: if the timing belt is not tensioned, there’s a chance it could bump against the ends of the makerslide and wear at the teeth.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Next Version of the Motorized Pocket Dolly]]></title>
+    <link href="http://cinemaker.us/2013/01/next-version-of-the-motorized-pocket-dolly/"/>
+    <updated>2013-01-16T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/next-version-of-the-motorized-pocket-dolly</id>
+    <content type="html"><![CDATA[<p>I’ve begun work on the next prototype version of the motorized pocket dolly (Tentatively called the Cinemaker Pocket Dolly). The <a href="http://www.thingiverse.com/thing:42521">plans are up on Thingiverse</a> (new project) as well as <a href="https://github.com/canadaduane/MakerSlider">github</a> (same old project).</p>
+
+<p>The major design change for this pocket dolly is the side-mounted motor. As I’ve mentioned previously, no longer will the slider have a motor and its wires move with the “sled” in the middle. Instead, the power will be transferred through a full loop timing belt connected to the sled. It leaves a lot more room for better design decisions and I think it’s safer for the camera as well (nothing to trip over).</p>
+
+<p>I’ve been experimenting with some new 5 kg-cm holding torque motors that also sport a “D” shaft. These will be much stronger and slip less than the original design. I’m excited to be able to enable Epic users (with their minimum 5lb video camera) to pan and slide. No promises yet, but at this stage I think it will be possible.</p>
+
+<p><img src="https://www.dropbox.com/s/isw1m0kg1yrj1nn/2013-01-15-motor-side-bracket-two-pieces-small.jpg?dl=1" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Knobs, Buttons and an Enclosure]]></title>
+    <link href="http://cinemaker.us/2013/01/knobs-buttons-and-an-enclosure/"/>
+    <updated>2013-01-11T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/knobs-buttons-and-an-enclosure</id>
+    <content type="html"><![CDATA[<p>Just before I shipped the first MakerSlider off to its (first!) owner, I built this enclosure for the 2 buttons and a knob:</p>
+
+<p><img src="https://www.dropbox.com/s/pj3uatn9qvyh9tc/2013-01-08" alt="" />
+<img src="https://www.dropbox.com/s/6ajfgu9wmjm22qa/2013-01-08" alt="" /></p>
+
+<p>The basic UI is simple: turn the knob to adjust speed, and then press a button (either “left” or “right”) to make the slider move left or right until it reaches the end. You can press a button again to (abruptly) stop the slider movement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Universal Tripod Mount]]></title>
+    <link href="http://cinemaker.us/2012/12/new-universal-tripod-mount/"/>
+    <updated>2012-12-27T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/new-universal-tripod-mount</id>
+    <content type="html"><![CDATA[<p>Today I finished designing and 3D printing a “new and improved” universal tripod mount for makerslide. Previous attempts to build a tripod mount were either too weak, or not flat on the bottom (i.e. bolt heads protruded, making the surface not flat). I’m pretty happy with this latest design.</p>
+
+<div class="gallery">
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-parts.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-parts.jpg"></a>
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-upright.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-upright.jpg"></a>
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-connected.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-connected.jpg"></a>
+</div>
+
+
+<p>In order to make it stronger, I used a flanged 1/4"-20 nut. The flange part of the nut has a firm grip and is set deeply in the plastic part that mounts to the makerslide. In addition, there are 4 holes for bolts that connect to the makerslide to help balance the strain of a slider being twisted or pulled under the weight of a camera (or manual setup of the slider, for that matter–my coworker unintentionally broke two of the previous version of the universal tripod mount, simply by attaching and reattaching the slider to tripods).</p>
+]]></content>
+  </entry>
+  
+</feed>

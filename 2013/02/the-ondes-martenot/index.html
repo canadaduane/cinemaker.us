@@ -1,0 +1,173 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Ondes Martenot - Cinemaker</title>
+	<meta name="author" content="Duane Johnson">
+
+	
+	<meta name="description" content="I’ve been racking my brains for the past couple of weeks trying to figure out a way to make a &#8220;sliding potentiometer&#8221; the full length of &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Cinemaker" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<header id="header" class="inner"><h1>
+	<img class="logo" src="/images/cinemaker-logo.png" />
+	<a href="/">Cinemaker</a>
+</h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:cinemaker.us">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		
+    
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:cinemaker.us">
+	</form>
+</nav>
+
+</header>
+	
+		
+	
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">The Ondes Martenot</h2>
+	<div class="entry-content"><p><img src="/images/2013-02/ondes-martenot.jpg" alt="" /></p>
+
+<p>I’ve been racking my brains for the past couple of weeks trying to figure out a way to make a &#8220;sliding potentiometer&#8221; the full length of the cinemaker pocket dolly. Today, after one lucky email exchange, I have a cost effective solution that sounds like music to my ears.</p>
+
+<p>In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):</p>
+
+<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p>
+
+<p> 
+|====================aluminum======================| 1 meter<br/>
+sensor>           [knob]            [knob]</p>
+
+<p>Basically, I want to recreate the functionality of a double &#8220;slide potentiometer&#8221; but the slide is 1m long. Each of the &#8220;[knob]&#8221; things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
+
+<p>I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads &#8220;tick&#8221; marks along the bottom, or a &#8220;spring-loaded&#8221; coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.</p>
+
+<p>The cheapest method seems to be ultrasonic sensors (see <a href="/images/2013-02/ondes-martenot.jpg">1</a>), however I don’t want wires dangling. One way to avoid power and wires to the knobs is if I mount one tranceiver on the end of the aluminum extrusion (as pictured above). However, then the problem is that the sensor detects the BAR ITSELF and says &#8220;hey something is really close&#8221;. I could get around this by mounting 2 more ultrasonic tranceivers–one at each of the sliding knobs I want to measure. In this scenario, instead of sending and receiving the ultrasonic pulse from the same location, I could break it up and send at the knob and receive at the end of the aluminum extrusion. If I take this course, however, it means I must send power through wires to ultrasonic transmitters at the knobs.</p>
+
+<p>Again, I don’t want wires hanging about. So I was thinking, as a software engineer is generally wont to do, about computer vision. I could hypothetically mount a camera at one end of the slider (as pictured) and then look for &#8220;hot pink&#8221; colored knobs. Divide the inverse ratio of non-hot-pink pixels to hot-pink pixels and I would get the absolute<br/>
+distance to the hot pink knobs. This method could work since &#8220;hot pink&#8221; is not generally found in natural environments (except for my 3 year old daughter’s birthday party…) </p>
+
+<p>The problem with the above solution is that video cameras are a little more expensive than ultrasonic sensors, and much more computationally intensive. So that got me thinking. What if I could coat the knobs with a material that is the &#8220;sonic equivalent&#8221; of hot pink? Does such a thing exist? Is there a way to detect echoes from various surfaces such that the receiver will ignore certain types of (non-hot-pink) sounds?</p>
+
+<p>I know it’s kind of a crazy analogy, but since I’ve hit a wall with ideas I thought I’d ask for your thoughts. If anyone has any ideas I’d love to hear them.</p></blockquote>
+
+<p>Mason replied:</p>
+
+<blockquote><p>Dare I ask why you wouldn’t use something like what an Ondes Martinot http://en.wikipedia.org/wiki/Ondes_Martenot uses? It seems pretty darn close to &#8220;slide potentiometer&#8221; in actual function, with the length you desire.</p></blockquote>
+
+<p>&#8220;The Ondes Martenot? What the heck is that?&#8221; I thought. It turns out that there’s a beautiful instrument invented in the early 20th century that uses a &#8220;ring&#8221; (the kind of ring you put your finger in) to slide along the length of a keyboard/piano. The position of the ring indicates the pitch of the musical sound. If you’ve ever heard 1950s style &#8220;eerie martian music&#8221; it was probably an Ondes Martenot.</p>
+
+<p>Shocked and amazed, I went to the wikipedia page to try to figure out how it works. Unfortunately, the technical details were scant. So I turned to google and sure enough, someone has re-created the Ondes Martenot and revealed its secret! Dana Countryman gave this demonstration of his DIY instrument:</p>
+
+<p>So the take-away for me is this: keep the creative ideas flowing, but don’t hesitate to go to a group of knowledgeable people with a seemingly intractable problem–they are bound to drop an OMG why didn’t I think of that? bomb and make life simpler.</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-11T00:00:00-07:00" pubdate data-updated="true">Feb 11<span>th</span>, 2013</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/design/'>Design</a>, <a class='category' href='/blog/categories/hardware/'>Hardware</a>
+
+
+</div>
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
+
+    Duane Johnson
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

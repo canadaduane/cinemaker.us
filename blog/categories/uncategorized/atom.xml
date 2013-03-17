@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Uncategorized | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/uncategorized/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-03-17T17:25:28-06:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Photos of MakerSlider 0.2]]></title>
+    <link href="http://cinemaker.us/2012/11/photos-of-makerslider-0-2/"/>
+    <updated>2012-11-01T00:00:00-06:00</updated>
+    <id>http://cinemaker.us/2012/11/photos-of-makerslider-0-2</id>
+    <content type="html"><![CDATA[<p><img src="https://dl.dropbox.com/s/azw75hjtkgdl2vf/makerslider-0.2-angle.jpg?dl=1" title="MakerSlider 0.2 Angle Shot" alt="" /></p>
+
+<p> </p>
+
+<p><img src="https://dl.dropbox.com/s/2wd6bh09spdqoun/makerslider-0.2-side.jpg?dl=1" title="MakerSlider 0.2 Side View" alt="" /></p>
+
+<p><img src="https://dl.dropbox.com/s/evdsbtdgjbrj6y2/makerslider-0.2-front2.jpg?dl=1" title="MakerSlider 0.2 Front View" alt="" /></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Makerspace | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/makerspace/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-03-17T17:25:28-06:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[More Shop Buildout, and Eureka! for the Eccentric Spacer]]></title>
+    <link href="http://cinemaker.us/2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer/"/>
+    <updated>2012-12-09T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer</id>
+    <content type="html"><![CDATA[<p>This week i’ve been building out more of the shop–I’m excited to have an actual bench lining the far wall of the “fablab” / makerspace. Along the way, I’ve also been working on the slider’s carriage and ball head mounting.</p>
+
+<p>The MakerSlide has a lot of optional parts that you can buy from Inventables, and to be honest I didn’t understand what they were all used at first. For example, I saw the “<a href="https://www.inventables.com/technologies/precision-shim-washer">precision shim washer</a>” available and didn’t buy it on my first run. It soon became obvious why it is needed, however–if you put the two ball bearings into the <a href="https://www.inventables.com/technologies/dual-bearing-v-wheel-kit">v-wheel</a> without the washer in between and then tighten, well, the ball bearings pick up a lot of friction along the way (the bolt squeezes and applies pressure orthogonal to the way the bearing is meant to have pressure applied, so it really isn’t the bearing’s fault!)</p>
+
+<p>Another example of a part that isn’t obvious–the <a href="https://www.inventables.com/technologies/eccentric-spacer">eccentric spacer</a> <a href="https://www.inventables.com/technologies/precision-shim-washer">1</a>. The <a href="https://www.inventables.com/technologies/standard-wheel-carriage-plate">aluminum carriage plate</a> has many holes in it and so I thought it would be easy to find a few holes that fit the <a href="https://www.inventables.com/technologies/aluminum-extrusion">aluminum extrusion</a> just right. Unfortunately, while it’s possible to find holes that are <strong>really close</strong> to the right spot, they are almost always just a little too tight. Consequently, the carriage is too stiff and you can feel bumps along the way because the imperfections of the bearings are magnified as they roll.</p>
+
+<p><img src="https://dl.dropbox.com/s/3noi78gjlbzl2l9/2012-12-08-bottom-of-plate.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/yh46vixp9m7zj3h/2012-12-08-shop.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/csphubosg0u9mre/2012-12-08-spacers.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/4n8c6xhd1z61sj5/2012-12-08-eccentric-spacer.jpg?dl=1" alt="" /></p>
+
+<p><a href="https://www.inventables.com/technologies/precision-shim-washer">1</a> Eccentric Spacer: <img src="https://dzevsq2emy08i.cloudfront.net/paperclip/technology_image_uploaded_images/23189/grid/eccentric" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manfrotto Leads to Drill Press]]></title>
+    <link href="http://cinemaker.us/2012/12/manfrotto-leads-to-drill-press/"/>
+    <updated>2012-12-07T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/manfrotto-leads-to-drill-press</id>
+    <content type="html"><![CDATA[<p>So after I picked up a Manfrotto Jr. ball head to be mounted on the slider carriage, I quickly discovered that the best way to mount it to the aluminum carriage would be to bolt it on directly—the <a href="http://www.amazon.com/gp/product/B001TK3ELC/ref=oh_details_o00_s00_i00">Manfrotto Jr. Head</a> comes with a 5/8″ threaded hole on the bottom.</p>
+
+<p>But with a new, barebones shop comes limitations (and powers! don’t forget the super powers!). Until today the limitation that pressed most urgently was “no drill press”. It’s amazing how easy it is to do things with the right tool! Pictured below is the first 5/8″ hole that I drilled into the <a href="https://www.inventables.com/technologies/standard-wheel-carriage-plate">standard aluminum plate</a> that can be purchased with makerslide. The other holes that are machined into the standard plate are 3/8″ and 1/4″—too small for the Manfrotto threading, unfortunately.</p>
+
+<p>The green area on the surface near the hole is some bike chain oil that I’m using to ease the bit through the aluminum. I’m sure there’s something better to use out there, but it’s what I had on hand !:)</p>
+
+<p><img src="https://dl.dropbox.com/s/16l4cmk3b008zrs/2012-12-06" alt="" />
+<img src="https://dl.dropbox.com/s/23kgka9tvnejzc8/2012-12-06" alt="" />
+<img src="https://dl.dropbox.com/s/t5ra8lhsmigf8r6/2012-12-06" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Moved In&#8211;Maker Garage v.0.1]]></title>
+    <link href="http://cinemaker.us/2012/11/getting-moved-in-maker-garage-v-0-1/"/>
+    <updated>2012-11-28T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/11/getting-moved-in-maker-garage-v-0-1</id>
+    <content type="html"><![CDATA[<p>So my wife and I have finally completed our move to Salt Lake City, Utah from Chicago, Illinois. We’re super excited to be here and to finally set roots down and own a house! The bad news is that it has taken a couple of weeks out of my intended MakerSlider building time. The good news is that I’m all set up and ready to keep things rolling. By “all set up” I mean I have a table in my garage for the MakerSlider project, and my Ultimaker set up on a bench. See photos :)</p>
+
+<div class="gallery">
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-11-27 Maker Garage.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-11-27 Maker Garage.jpg"></a>
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-11-26 Maker Garage2.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-11-26 Maker Garage2.jpg"></a>
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-12-08 Maker Garage.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-12-08 Maker Garage.jpg"></a>
+</div>
+
+]]></content>
+  </entry>
+  
+</feed>

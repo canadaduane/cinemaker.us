@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Software | Cinemaker]]></title>
+  <link href="http://cinemaker.us/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://cinemaker.us/"/>
+  <updated>2013-03-17T17:25:28-06:00</updated>
+  <id>http://cinemaker.us/</id>
+  <author>
+    <name><![CDATA[Duane Johnson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Source Code on Github]]></title>
+    <link href="http://cinemaker.us/2012/11/source-code-on-github/"/>
+    <updated>2012-11-01T00:00:00-06:00</updated>
+    <id>http://cinemaker.us/2012/11/source-code-on-github</id>
+    <content type="html"><![CDATA[<p>While I’ll use the <a href="http://www.thingiverse.com/thing:33368">Thingiverse page</a> as a once-in-a-while release area, I’ll be making most updates to the following github page:</p>
+
+<p>https://github.com/canadaduane/MakerSlider</p>
+
+<p>For example, I’ve updated the endcaps to actually have ends now (gasp!) and this sort of thing isn’t worthy of a release, so I’ve just updated the files on github.</p>
+]]></content>
+  </entry>
+  
+</feed>

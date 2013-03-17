@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Cinemaker</title>
+	<title>Prototype Arduino + grblShield Board - Cinemaker</title>
 	<meta name="author" content="Duane Johnson">
 
 	
-	<meta name="description" content="Page not found Sorry about that! Unfortunately the page you were looking for could not be found. It might have been removed, lost or never existed. &hellip;">
+	<meta name="description" content="A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -74,30 +74,45 @@
 	
 		
 	
-	<div id="content" class="inner"><article class="page">
-    
-    <div class="entry-content"><header>
-  <h1 class="entry-title">Page not found</h1>
-  <p class="meta">Sorry about that!</p>
-</header>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Prototype Arduino + grblShield Board</h2>
+	<div class="entry-content"><p>A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for the Arduino. It can convert much higher voltage (up to 40V) but I don’t think I’ll be using that for now :)</p>
 
-<p>
-  Unfortunately the page you were looking for could not be found. It might have
-  been removed, lost or never existed. You could try and find it using the
-  <script>
-    var arrURL = document.URL.split("/");
-    var arrParams = arrURL[3].split("?");
-    var searchParam = arrParams[0].substr(0, arrParams[0].lastIndexOf("."));
-    
-    document.write('<a href="http://google.com/search?q=site:cinemaker.us ' + searchParam + '">search</a>')
-  </script>
-  <noscript><a href="http://google.com/search?q=site%3Acinemaker.us">search</a></noscript>
-  box (top right corner), browse the
-  <a href="/blog/archives">archives</a> or go to the
-  <a href="/">frontpage</a>.
-</p>
+<p>When all strapped together, the prototype board is quite a sight (ok, an ‘ugly’ sight if you ask me). It’s kind of cool to be able to put all of these pieces together, though, and get a programmable board that does exactly what’s needed: slide a camera back and forth using a stepper motor at variable speed.</p>
+
+<p>[![][3]][3]</p>
+
+<p>I’m having a bit of trouble getting the potentiometer knob to make a solid connection with the Arduino. As a result, the speed control behaves somewhat “randomly” whenever it samples the potentiometer’s resistance (it’s a 10k ohm pot). I’m hoping that once soldered on a proper PCB board the variability will go away–when I physically clamp the wires together with my fingers, I get a predictable result, for example.</p>
+
+<p>The source code for the modified version of grbl is available here:</p>
+
+<p>This version of grbl basically adds the ability to sample analog pin values (as is needed with the potentiometer) and uses the anolog pins for buttons as well (since all of the digital pins are used up by the grblShield’s XYZ axes).</p>
 </div>
-</article>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-30T00:00:00-07:00" pubdate data-updated="true">Dec 30<span>th</span>, 2012</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/hardware/'>Hardware</a>
+
+
+</div>
+	
+</div></article>
 
 	<div class="share">
 	<div class="addthis_toolbox addthis_default_style ">
@@ -110,7 +125,6 @@
 	</div>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
 </div>
-
 
 
 </div>

@@ -1,20 +1,98 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://cinemaker.us/blog/2013/02/24/coming-soon/</loc>
-        <lastmod>2013-02-24T20:02:26-07:00</lastmod>
+        <loc>http://cinemaker.us/2012/10/manual-camera-slider-v-0-2/</loc>
+        <lastmod>2013-03-17T15:31:45-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/11/photos-of-makerslider-0-2/</loc>
+        <lastmod>2013-03-17T15:31:47-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/11/source-code-on-github/</loc>
+        <lastmod>2013-03-17T15:32:06-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/11/sliding-test-video/</loc>
+        <lastmod>2013-03-17T15:43:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/11/getting-moved-in-maker-garage-v-0-1/</loc>
+        <lastmod>2013-03-17T16:07:03-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/11/universal-tripod-mount-for-makerslide/</loc>
+        <lastmod>2013-03-17T15:44:04-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/manfrotto-leads-to-drill-press/</loc>
+        <lastmod>2013-03-17T15:44:15-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://cinemaker.us/2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer/
+        </loc>
+        <lastmod>2013-03-17T15:34:09-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/camera-slider-subplate/</loc>
+        <lastmod>2013-03-17T15:34:16-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/progress-on-barts-slider/</loc>
+        <lastmod>2013-03-17T15:44:28-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/instructure-interview-using-makerslider/</loc>
+        <lastmod>2013-03-17T15:44:40-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/evolution-of-the-tripod-mount/</loc>
+        <lastmod>2013-03-17T15:44:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/new-universal-tripod-mount/</loc>
+        <lastmod>2013-03-17T15:54:25-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2012/12/prototype-arduino-grblshield-board/</loc>
+        <lastmod>2013-03-17T15:45:04-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2013/01/working-demo-of-makerslider-v-0-8/</loc>
+        <lastmod>2013-03-17T15:42:17-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2013/01/knobs-buttons-and-an-enclosure/</loc>
+        <lastmod>2013-03-17T15:35:09-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2013/01/next-version-of-the-motorized-pocket-dolly/</loc>
+        <lastmod>2013-03-17T15:35:12-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2013/01/toward-cinemaker-2-0-not-on-but-through/</loc>
+        <lastmod>2013-03-17T15:39:36-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/2013/02/the-ondes-martenot/</loc>
+        <lastmod>2013-03-17T16:13:02-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://cinemaker.us/blog/2013/03/17/a-new-name/</loc>
+        <lastmod>2013-03-17T17:25:27-06:00</lastmod>
     </url>
     <url>
         <loc>http://cinemaker.us/404.html</loc>
-        <lastmod>2013-02-24T19:52:37-07:00</lastmod>
+        <lastmod>2013-03-09T13:38:54-07:00</lastmod>
     </url>
     <url>
         <loc>http://cinemaker.us/blog/archives/</loc>
-        <lastmod>2013-02-24T20:02:26-07:00</lastmod>
+        <lastmod>2013-03-17T17:25:27-06:00</lastmod>
     </url>
     <url>
         <loc>http://cinemaker.us/</loc>
-        <lastmod>2013-02-24T20:02:26-07:00</lastmod>
+        <lastmod>2013-03-17T17:25:27-06:00</lastmod>
     </url>
     <url>
         <loc>http://cinemaker.us/robots.txt</loc>

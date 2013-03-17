@@ -4,7 +4,7 @@
   <title><![CDATA[Cinemaker]]></title>
   <link href="http://cinemaker.us/atom.xml" rel="self"/>
   <link href="http://cinemaker.us/"/>
-  <updated>2013-02-24T20:02:32-07:00</updated>
+  <updated>2013-03-17T17:25:28-06:00</updated>
   <id>http://cinemaker.us/</id>
   <author>
     <name><![CDATA[Duane Johnson]]></name>
@@ -14,11 +14,379 @@
 
   
   <entry>
-    <title type="html"><![CDATA[coming-soon]]></title>
-    <link href="http://cinemaker.us/blog/2013/02/24/coming-soon/"/>
-    <updated>2013-02-24T19:55:00-07:00</updated>
-    <id>http://cinemaker.us/blog/2013/02/24/coming-soon</id>
-    <content type="html"><![CDATA[<p>Coming soon! For the moment, please see <a href="http://makerslider.com/">http://makerslider.com/</a> for the latest progress on the Cinemon Stick camera slider.</p>
+    <title type="html"><![CDATA[A New Name, a New Website]]></title>
+    <link href="http://cinemaker.us/blog/2013/03/17/a-new-name/"/>
+    <updated>2013-03-17T17:20:00-06:00</updated>
+    <id>http://cinemaker.us/blog/2013/03/17/a-new-name</id>
+    <content type="html"><![CDATA[<p>The Cinemaker Cinemon Stick has undergone a number of naming iterations over the past 8 months as we&#8217;ve built it out and experimented with ideas. We started the project as the &#8220;Makerslider Camera Slider&#8221; and iterated on &#8220;Pocket Dolly&#8221; as an alternative name (and also to avoid stepping on Cineslider Camera Slider&#8217;s toes).</p>
+
+<p>As we approach the 2.0 design, we&#8217;re changing the name to the Cinemon Stick&mdash;aka the Cinemaker Cinemon Stick. It sounds fun, has enough distinctiveness as to be searchable, and incorporates the &#8220;cinema&#8221; prefix that we&#8217;d hoped for.</p>
+
+<p>And to accompany the name change, we&#8217;re moving the website from makerslider.com to cinemaker.com! Please bear with me (Duane) as I update things and make the new site as information-rich as the old.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Ondes Martenot]]></title>
+    <link href="http://cinemaker.us/2013/02/the-ondes-martenot/"/>
+    <updated>2013-02-11T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/02/the-ondes-martenot</id>
+    <content type="html"><![CDATA[<p><img src="http://cinemaker.us/images/2013-02/ondes-martenot.jpg" alt="" /></p>
+
+<p>I’ve been racking my brains for the past couple of weeks trying to figure out a way to make a &#8220;sliding potentiometer&#8221; the full length of the cinemaker pocket dolly. Today, after one lucky email exchange, I have a cost effective solution that sounds like music to my ears.</p>
+
+<p>In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):</p>
+
+<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p>
+
+<p> 
+|====================aluminum======================| 1 meter<br/>
+sensor>           [knob]            [knob]</p>
+
+<p>Basically, I want to recreate the functionality of a double &#8220;slide potentiometer&#8221; but the slide is 1m long. Each of the &#8220;[knob]&#8221; things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
+
+<p>I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads &#8220;tick&#8221; marks along the bottom, or a &#8220;spring-loaded&#8221; coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.</p>
+
+<p>The cheapest method seems to be ultrasonic sensors (see <a href="http://cinemaker.us/images/2013-02/ondes-martenot.jpg">1</a>), however I don’t want wires dangling. One way to avoid power and wires to the knobs is if I mount one tranceiver on the end of the aluminum extrusion (as pictured above). However, then the problem is that the sensor detects the BAR ITSELF and says &#8220;hey something is really close&#8221;. I could get around this by mounting 2 more ultrasonic tranceivers–one at each of the sliding knobs I want to measure. In this scenario, instead of sending and receiving the ultrasonic pulse from the same location, I could break it up and send at the knob and receive at the end of the aluminum extrusion. If I take this course, however, it means I must send power through wires to ultrasonic transmitters at the knobs.</p>
+
+<p>Again, I don’t want wires hanging about. So I was thinking, as a software engineer is generally wont to do, about computer vision. I could hypothetically mount a camera at one end of the slider (as pictured) and then look for &#8220;hot pink&#8221; colored knobs. Divide the inverse ratio of non-hot-pink pixels to hot-pink pixels and I would get the absolute<br/>
+distance to the hot pink knobs. This method could work since &#8220;hot pink&#8221; is not generally found in natural environments (except for my 3 year old daughter’s birthday party…) </p>
+
+<p>The problem with the above solution is that video cameras are a little more expensive than ultrasonic sensors, and much more computationally intensive. So that got me thinking. What if I could coat the knobs with a material that is the &#8220;sonic equivalent&#8221; of hot pink? Does such a thing exist? Is there a way to detect echoes from various surfaces such that the receiver will ignore certain types of (non-hot-pink) sounds?</p>
+
+<p>I know it’s kind of a crazy analogy, but since I’ve hit a wall with ideas I thought I’d ask for your thoughts. If anyone has any ideas I’d love to hear them.</p></blockquote>
+
+<p>Mason replied:</p>
+
+<blockquote><p>Dare I ask why you wouldn’t use something like what an Ondes Martinot http://en.wikipedia.org/wiki/Ondes_Martenot uses? It seems pretty darn close to &#8220;slide potentiometer&#8221; in actual function, with the length you desire.</p></blockquote>
+
+<p>&#8220;The Ondes Martenot? What the heck is that?&#8221; I thought. It turns out that there’s a beautiful instrument invented in the early 20th century that uses a &#8220;ring&#8221; (the kind of ring you put your finger in) to slide along the length of a keyboard/piano. The position of the ring indicates the pitch of the musical sound. If you’ve ever heard 1950s style &#8220;eerie martian music&#8221; it was probably an Ondes Martenot.</p>
+
+<p>Shocked and amazed, I went to the wikipedia page to try to figure out how it works. Unfortunately, the technical details were scant. So I turned to google and sure enough, someone has re-created the Ondes Martenot and revealed its secret! Dana Countryman gave this demonstration of his DIY instrument:</p>
+
+<p>So the take-away for me is this: keep the creative ideas flowing, but don’t hesitate to go to a group of knowledgeable people with a seemingly intractable problem–they are bound to drop an OMG why didn’t I think of that? bomb and make life simpler.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Toward Cinemaker 2.0: Not ON, but THROUGH]]></title>
+    <link href="http://cinemaker.us/2013/01/toward-cinemaker-2-0-not-on-but-through/"/>
+    <updated>2013-01-20T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/toward-cinemaker-2-0-not-on-but-through</id>
+    <content type="html"><![CDATA[<p>One of my goals for version 2.0 of the MakerSlider (soon to be called Cinemaker Pocket Dolly) was to move the motor from the sled to the end of the makerslide aluminum bar. I had been optimizing a design that would leave room for the 1/4″ timing belt to move underneath the sled (the part of the pocket dolly that I’ve previously been calling a “carriage”). This design would basically look like a thick elastic band on top of the aluminum bar with one end affixed to a motor and the other to an idler with ball bearings.</p>
+
+<div class="gallery">
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg"></a>
+</div>
+
+
+<p>As I worked on the design, however, it soon became clear that it would be so much better if I could somehow tip the motor 90 degrees and attach the timing belt, flat side, on to the sled. As that idea percolated one night, I realized that the makerslide itself could accomodate this if I used the INSIDE of the aluminum as a transport for the timing belt! So, rather than having both sides of the timing belt under the sled, now we can have just one.</p>
+
+<p>The advantages to this design are several:</p>
+
+<ol>
+<li>Easier way to affix the timing belt to the sled: since the belt is oriented with its flat side toward the sled, it’s as easy as squeezing the belt between a fastener and the sled.</li>
+<li>No need to “go around” nuts and bolts under the sled: almost anything that attaches to the sled–such as a ball head or camera–will need to have a nut or bolt sticking through the sled and poking through the bottom. Any design that has a timing belt underneath the carriage will also have to accommodate the position of these nuts and bolts. With the new design, none of this needs to be taken into account since the timing belt can be affixed on each end of the sled.</li>
+<li>Only one moving part: since most of the belt is “hidden” inside the makerslide, the only exterior moving part is the half of the timing belt showing on the upper side.</li>
+</ol>
+
+
+<p>There are also some disadvantages:</p>
+
+<ol>
+<li>It’s harder to get the timing belt in and out of the makerslide. Simply put, you have to get a timing belt with no backbone all the way through a 1-meter-long tube.</li>
+<li>Possibility of “catching” on the edges: if the timing belt is not tensioned, there’s a chance it could bump against the ends of the makerslide and wear at the teeth.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Next Version of the Motorized Pocket Dolly]]></title>
+    <link href="http://cinemaker.us/2013/01/next-version-of-the-motorized-pocket-dolly/"/>
+    <updated>2013-01-16T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/next-version-of-the-motorized-pocket-dolly</id>
+    <content type="html"><![CDATA[<p>I’ve begun work on the next prototype version of the motorized pocket dolly (Tentatively called the Cinemaker Pocket Dolly). The <a href="http://www.thingiverse.com/thing:42521">plans are up on Thingiverse</a> (new project) as well as <a href="https://github.com/canadaduane/MakerSlider">github</a> (same old project).</p>
+
+<p>The major design change for this pocket dolly is the side-mounted motor. As I’ve mentioned previously, no longer will the slider have a motor and its wires move with the “sled” in the middle. Instead, the power will be transferred through a full loop timing belt connected to the sled. It leaves a lot more room for better design decisions and I think it’s safer for the camera as well (nothing to trip over).</p>
+
+<p>I’ve been experimenting with some new 5 kg-cm holding torque motors that also sport a “D” shaft. These will be much stronger and slip less than the original design. I’m excited to be able to enable Epic users (with their minimum 5lb video camera) to pan and slide. No promises yet, but at this stage I think it will be possible.</p>
+
+<p><img src="https://www.dropbox.com/s/isw1m0kg1yrj1nn/2013-01-15-motor-side-bracket-two-pieces-small.jpg?dl=1" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Knobs, Buttons and an Enclosure]]></title>
+    <link href="http://cinemaker.us/2013/01/knobs-buttons-and-an-enclosure/"/>
+    <updated>2013-01-11T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/knobs-buttons-and-an-enclosure</id>
+    <content type="html"><![CDATA[<p>Just before I shipped the first MakerSlider off to its (first!) owner, I built this enclosure for the 2 buttons and a knob:</p>
+
+<p><img src="https://www.dropbox.com/s/pj3uatn9qvyh9tc/2013-01-08" alt="" />
+<img src="https://www.dropbox.com/s/6ajfgu9wmjm22qa/2013-01-08" alt="" /></p>
+
+<p>The basic UI is simple: turn the knob to adjust speed, and then press a button (either “left” or “right”) to make the slider move left or right until it reaches the end. You can press a button again to (abruptly) stop the slider movement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Working Demo of Motorized MakerSlider v.0.8]]></title>
+    <link href="http://cinemaker.us/2013/01/working-demo-of-makerslider-v-0-8/"/>
+    <updated>2013-01-01T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2013/01/working-demo-of-makerslider-v-0-8</id>
+    <content type="html"><![CDATA[<p>This is pretty close to version 1.0 of the 1-axis Motorized MakerSlider Camera Slider (see <a href="http://makerslider.com/wp/roadmap/">the roadmap</a>). Notably absent is the user interface mounted to the slider itself. With that caveat out of the way, however, behold the MakerSlider nearing version 1.0! :)</p>
+
+<p>Untethered Demo of MakerSlider Camera Slider</p>
+
+<p>Camera’s POV</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Prototype Arduino + grblShield Board]]></title>
+    <link href="http://cinemaker.us/2012/12/prototype-arduino-grblshield-board/"/>
+    <updated>2012-12-30T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/prototype-arduino-grblshield-board</id>
+    <content type="html"><![CDATA[<p>A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for the Arduino. It can convert much higher voltage (up to 40V) but I don’t think I’ll be using that for now :)</p>
+
+<p>When all strapped together, the prototype board is quite a sight (ok, an ‘ugly’ sight if you ask me). It’s kind of cool to be able to put all of these pieces together, though, and get a programmable board that does exactly what’s needed: slide a camera back and forth using a stepper motor at variable speed.</p>
+
+<p>[![][3]][3]</p>
+
+<p>I’m having a bit of trouble getting the potentiometer knob to make a solid connection with the Arduino. As a result, the speed control behaves somewhat “randomly” whenever it samples the potentiometer’s resistance (it’s a 10k ohm pot). I’m hoping that once soldered on a proper PCB board the variability will go away–when I physically clamp the wires together with my fingers, I get a predictable result, for example.</p>
+
+<p>The source code for the modified version of grbl is available here:</p>
+
+<p>This version of grbl basically adds the ability to sample analog pin values (as is needed with the potentiometer) and uses the anolog pins for buttons as well (since all of the digital pins are used up by the grblShield’s XYZ axes).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Universal Tripod Mount]]></title>
+    <link href="http://cinemaker.us/2012/12/new-universal-tripod-mount/"/>
+    <updated>2012-12-27T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/new-universal-tripod-mount</id>
+    <content type="html"><![CDATA[<p>Today I finished designing and 3D printing a “new and improved” universal tripod mount for makerslide. Previous attempts to build a tripod mount were either too weak, or not flat on the bottom (i.e. bolt heads protruded, making the surface not flat). I’m pretty happy with this latest design.</p>
+
+<div class="gallery">
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-parts.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-parts.jpg"></a>
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-upright.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-upright.jpg"></a>
+  <a rel="gallery20121227" href="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-connected.jpg" class="fancybox"><img width="260" src="http://cinemaker.us/images/2012-12/2012-12-26-universal-tripod-mount-connected.jpg"></a>
+</div>
+
+
+<p>In order to make it stronger, I used a flanged 1/4&#8221;-20 nut. The flange part of the nut has a firm grip and is set deeply in the plastic part that mounts to the makerslide. In addition, there are 4 holes for bolts that connect to the makerslide to help balance the strain of a slider being twisted or pulled under the weight of a camera (or manual setup of the slider, for that matter–my coworker unintentionally broke two of the previous version of the universal tripod mount, simply by attaching and reattaching the slider to tripods).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Evolution of the Tripod Mount]]></title>
+    <link href="http://cinemaker.us/2012/12/evolution-of-the-tripod-mount/"/>
+    <updated>2012-12-27T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/evolution-of-the-tripod-mount</id>
+    <content type="html"><![CDATA[<p>I thought it would be fun to see all of my failed attempts to create a tripod mount together in one shot. There were 4 unsatisfactory versions of the “universal tripod mount” before settling on the current design.</p>
+
+<p><a href="https://www.dropbox.com/s/vc8y4vmuy3nit49/2012-12-27-tripod-mount-evolution.jpg?dl=1"><img src="https://www.dropbox.com/s/vc8y4vmuy3nit49/2012-12-27-tripod-mount-evolution.jpg?dl=1" alt="" /></a></p>
+
+<p>Each of the earlier designs has a flaw that made me have to scratch it and start over.</p>
+
+<p>When I designed the first version, I had only one tripod to mount the slider to. I didn’t realize at this point that tripod base plates come in all shapes and sizes, with the only commonality being the 1/4″-20 screw and threading.</p>
+
+<p>So I tried to fix that by embedding a hex nut in the bottom of the mount so that any tripod could be used. Unfortunately, the only thing keeping the hex nut in there was a thin (1mm) piece of plastic that easily broke off under pressure. I should have thought of the torsional stresses of a long bar like the makerslide mounted on a tripod, but I didn’t have anything stronger at the time and just went with it.</p>
+
+<p>Next, I tried using a large washer as the “strong” piece–by putting a hex nut <em>behind</em> the metal washer. I drilled two holes on either side of the 1/4″ hole of the washer to mount it to the makerslide. This worked well for strength, but my major oversight in this design was the need for two bolt heads to protrude from the washer. I could have put a specially designed spacer on top of the metal washer to make the surface flat, but then the threading of the hex nut would have been embedded 5mm or so <em>inside</em> the hole. Most tripod mount plates only have 3 or 4mm of bolt that protrudes, so that wasn’t an option.</p>
+
+<p>I made a couple of early versions of the design now in use. Flimsy sides, too thin, etc.</p>
+
+<p>Finally, the design you see pictures in the makerslide is the final robust result of all of this R&amp;D :) It would be even better if cast in metal, but it seems to be strong enough for what I need. The flanged nut is the key “innovation” in this design–since the flange will keep the threaded nut snug and secure in the plastic, the threading is exposed directly on the surface of the tripod mount piece (which is ideal). In addition, the bolts that secure the tripod mount to the makerslide are recessed and won’t touch the tripod’s base plate.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Instructure Interview Using MakerSlider]]></title>
+    <link href="http://cinemaker.us/2012/12/instructure-interview-using-makerslider/"/>
+    <updated>2012-12-18T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/instructure-interview-using-makerslider</id>
+    <content type="html"><![CDATA[<p>A recent interview with University of Utah’s Fernando Rubio was published today by the company where I work. It uses the MakerSlider 0.3 (manual, no motor) to take 3 sliding shots throughout the video:</p>
+
+<p>[![][2]][2] Interview with Fernando Rubio on his use of Canvas</p>
+
+<p>MakerSlider is in use at 1:07, 1:18, and 1:50 (probably the best shot). Note that these shots were taken while the Manfrotto Jr. ball head was in a wobbly off-center position, and the first iteration of the tripod mounts both broke while shooting! The shots turned out really well in spite of this, however. At this point in the development of the MakerSlider, I attribute that primarily to my coworker’s fine post production skills :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Progress on Bart&#8217;s Slider]]></title>
+    <link href="http://cinemaker.us/2012/12/progress-on-barts-slider/"/>
+    <updated>2012-12-16T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/progress-on-barts-slider</id>
+    <content type="html"><![CDATA[<p>Today I built out most of the hardware for <a href="http://www.buildlog.net/wiki/doku.php?id=ms:ms_slider">Bart’s camera slider</a>. His design uses a moving motor–the motor is attached to a plate that connects orthogonally to the aluminum carriage. The motor then moves itself along a neoprene belt that runs the length of the camera slider.</p>
+
+<p>I made customized some of the parts from my MakerSlider v.0.3 (such as the endcaps) and adjusted them to hold the neoprene belt. Also custom designed is the subplate that Bart originally used a laser cutter to build. Since I have only a 3D printer at the moment, I need to use whatever I have available. And it’s so fun to make things in 3D anyway :)</p>
+
+<p><img src="https://www.dropbox.com/s/dav4see6xj288xi/2012-12-15-neoprene-assembled.jpg?dl=1" alt="" />
+<img src="https://www.dropbox.com/s/vk4no48eozkjpih/2012-12-15-neoprene-carriage.jpg?dl=1" alt="" />
+<img src="https://www.dropbox.com/s/dve8h0m2x65s1o0/2012-12-15-neoprene-carriage-bottom.jpg?dl=1" alt="" />
+<img src="https://www.dropbox.com/s/3y97u91bksxcyjg/2012-12-15-neoprene-endcaps.jpg?dl=1" alt="" /></p>
+
+<p>The 3 custom parts are available on github:</p>
+
+<p>Subplate</p>
+
+<p><a href="https://github.com/canadaduane/MakerSlider/blob/bartslider/subplate.scad">subplate.scad</a></p>
+
+<p>Endcap</p>
+
+<p><a href="https://github.com/canadaduane/MakerSlider/blob/bartslider/endcap.scad">endcap.scad</a></p>
+
+<p>Slotted Neoprene “Washer”</p>
+
+<p><a href="https://github.com/canadaduane/MakerSlider/blob/bartslider/slotted_neoprene_washer.scad">slotted_neoprene_washer.scad</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Camera Slider Subplate]]></title>
+    <link href="http://cinemaker.us/2012/12/camera-slider-subplate/"/>
+    <updated>2012-12-15T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/camera-slider-subplate</id>
+    <content type="html"><![CDATA[<p>I’ve been working on a 3D-printable version of the subplate that Bart Dring originally spec’ed in his <a href="http://www.buildlog.net/wiki/doku.php?id=ms:ms_slider">wiki page about the camera slider</a>. To my knowledge, he never released the specs for the subplate. Even if he did, I don’t have a laser cutter (well, I don’t have a <strong>complete</strong> and <strong>fully functional</strong> laser cutter). As a result, I’m remaking the parts in 3D form so that they can be printed. Here are some shots of the progress today.</p>
+
+<p><img src="https://www.dropbox.com/s/qqqlx0470lsvcz9/2012-12-14" alt="" />
+<img src="http://new.tinygrab.com/77133be2e9a2b4d28db82257a645bb7e27ae1b2b59.png" alt="" /></p>
+
+<p><strong>Update:</strong> The subplate has been improved and the source is available <a href="https://github.com/canadaduane/MakerSlider/blob/bartslider/subplate.scad">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[More Shop Buildout, and Eureka! for the Eccentric Spacer]]></title>
+    <link href="http://cinemaker.us/2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer/"/>
+    <updated>2012-12-09T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer</id>
+    <content type="html"><![CDATA[<p>This week i’ve been building out more of the shop–I’m excited to have an actual bench lining the far wall of the “fablab” / makerspace. Along the way, I’ve also been working on the slider’s carriage and ball head mounting.</p>
+
+<p>The MakerSlide has a lot of optional parts that you can buy from Inventables, and to be honest I didn’t understand what they were all used at first. For example, I saw the “<a href="https://www.inventables.com/technologies/precision-shim-washer">precision shim washer</a>” available and didn’t buy it on my first run. It soon became obvious why it is needed, however–if you put the two ball bearings into the <a href="https://www.inventables.com/technologies/dual-bearing-v-wheel-kit">v-wheel</a> without the washer in between and then tighten, well, the ball bearings pick up a lot of friction along the way (the bolt squeezes and applies pressure orthogonal to the way the bearing is meant to have pressure applied, so it really isn’t the bearing’s fault!)</p>
+
+<p>Another example of a part that isn’t obvious–the <a href="https://www.inventables.com/technologies/eccentric-spacer">eccentric spacer</a> <a href="https://www.inventables.com/technologies/precision-shim-washer">1</a>. The <a href="https://www.inventables.com/technologies/standard-wheel-carriage-plate">aluminum carriage plate</a> has many holes in it and so I thought it would be easy to find a few holes that fit the <a href="https://www.inventables.com/technologies/aluminum-extrusion">aluminum extrusion</a> just right. Unfortunately, while it’s possible to find holes that are <strong>really close</strong> to the right spot, they are almost always just a little too tight. Consequently, the carriage is too stiff and you can feel bumps along the way because the imperfections of the bearings are magnified as they roll.</p>
+
+<p><img src="https://dl.dropbox.com/s/3noi78gjlbzl2l9/2012-12-08-bottom-of-plate.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/yh46vixp9m7zj3h/2012-12-08-shop.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/csphubosg0u9mre/2012-12-08-spacers.jpg?dl=1" alt="" />
+<img src="https://dl.dropbox.com/s/4n8c6xhd1z61sj5/2012-12-08-eccentric-spacer.jpg?dl=1" alt="" /></p>
+
+<p><a href="https://www.inventables.com/technologies/precision-shim-washer">1</a> Eccentric Spacer: <img src="https://dzevsq2emy08i.cloudfront.net/paperclip/technology_image_uploaded_images/23189/grid/eccentric" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manfrotto Leads to Drill Press]]></title>
+    <link href="http://cinemaker.us/2012/12/manfrotto-leads-to-drill-press/"/>
+    <updated>2012-12-07T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/12/manfrotto-leads-to-drill-press</id>
+    <content type="html"><![CDATA[<p>So after I picked up a Manfrotto Jr. ball head to be mounted on the slider carriage, I quickly discovered that the best way to mount it to the aluminum carriage would be to bolt it on directly—the <a href="http://www.amazon.com/gp/product/B001TK3ELC/ref=oh_details_o00_s00_i00">Manfrotto Jr. Head</a> comes with a 5/8″ threaded hole on the bottom.</p>
+
+<p>But with a new, barebones shop comes limitations (and powers! don’t forget the super powers!). Until today the limitation that pressed most urgently was “no drill press”. It’s amazing how easy it is to do things with the right tool! Pictured below is the first 5/8″ hole that I drilled into the <a href="https://www.inventables.com/technologies/standard-wheel-carriage-plate">standard aluminum plate</a> that can be purchased with makerslide. The other holes that are machined into the standard plate are 3/8″ and 1/4″—too small for the Manfrotto threading, unfortunately.</p>
+
+<p>The green area on the surface near the hole is some bike chain oil that I’m using to ease the bit through the aluminum. I’m sure there’s something better to use out there, but it’s what I had on hand !:)</p>
+
+<p><img src="https://dl.dropbox.com/s/16l4cmk3b008zrs/2012-12-06" alt="" />
+<img src="https://dl.dropbox.com/s/23kgka9tvnejzc8/2012-12-06" alt="" />
+<img src="https://dl.dropbox.com/s/t5ra8lhsmigf8r6/2012-12-06" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Universal Tripod Mount for Makerslide]]></title>
+    <link href="http://cinemaker.us/2012/11/universal-tripod-mount-for-makerslide/"/>
+    <updated>2012-11-29T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/11/universal-tripod-mount-for-makerslide</id>
+    <content type="html"><![CDATA[<p>The <a href="https://github.com/canadaduane/MakerSlider/blob/8119eab63e5cfb2be082ed0bd284f20de66ba120/tripod_mount.scad">original tripod mount</a> (the part that connects a makerslide aluminum extrusion to a tripod) was built for a specific brand of tripod. My friend Adam isn’t sure what the brand is that he loaned me, so I’ll call it &#8220;generic&#8221; :)</p>
+
+<p>In any event, the mount piece did not prove generic enough across brands to be useful on its own. Just this week, in fact, Adam needed to attach the slider to two tripods–both of which happened to be different brands. I think this is a common use case–being able to adapt in the field to whatever equipment is available. So to help make the MakerSlider more robust to different tripod brands, I’ve created the “Universal Makerslide Tripod Mount”. It’s currently available for download at the <a href="https://github.com/canadaduane/MakerSlider">MakerSlider github project page</a>.</p>
+
+<p>Whenever I make these adapter pieces I always have to remind myself what size thread the “standard” camera mount bolt uses. For the record, it’s 1/4 inch, with 20 threads per inch, i.e. ’1/4″-20′.</p>
+
+<p><img src="https://www.dropbox.com/s/72lp0ztl8pfd0kd/2012-11-28-tripod-mount-universal-3.jpg?dl=1" title="Universal MakerSlider Tripod Mount in Makerslide" alt="" />
+<img src="https://www.dropbox.com/s/qxtgpu9l2av5v5d/2012-11-28-tripod-mount-universal.jpg?dl=1" title="Universal MakerSlider Tripod Mount" alt="" /></p>
+
+<p><img src="https://www.dropbox.com/s/371j1sd8ypuszhe/2012-11-28-universal-tripod-mount.jpg?dl=1" title="Universal MakerSlider Tripod Mount" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Moved In&#8211;Maker Garage v.0.1]]></title>
+    <link href="http://cinemaker.us/2012/11/getting-moved-in-maker-garage-v-0-1/"/>
+    <updated>2012-11-28T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/11/getting-moved-in-maker-garage-v-0-1</id>
+    <content type="html"><![CDATA[<p>So my wife and I have finally completed our move to Salt Lake City, Utah from Chicago, Illinois. We’re super excited to be here and to finally set roots down and own a house! The bad news is that it has taken a couple of weeks out of my intended MakerSlider building time. The good news is that I’m all set up and ready to keep things rolling. By “all set up” I mean I have a table in my garage for the MakerSlider project, and my Ultimaker set up on a bench. See photos :)</p>
+
+<div class="gallery">
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-11-27 Maker Garage.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-11-27 Maker Garage.jpg"></a>
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-11-26 Maker Garage2.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-11-26 Maker Garage2.jpg"></a>
+  <a rel="gallery20121128" href="http://cinemaker.us/images/2012-11/2012-12-08 Maker Garage.jpg"><img width="260" src="http://cinemaker.us/images/2012-11/2012-12-08 Maker Garage.jpg"></a>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sliding Test Video]]></title>
+    <link href="http://cinemaker.us/2012/11/sliding-test-video/"/>
+    <updated>2012-11-13T00:00:00-07:00</updated>
+    <id>http://cinemaker.us/2012/11/sliding-test-video</id>
+    <content type="html"><![CDATA[<p>Thanks to my coworker and videographer friend, Adam Sanders, I have a new “first person perspective” video to post here. This one is of our coworker waving wildly and in an animated way to give us something interesting to look at as we slide away :)</p>
+
+<p>We’re using the basic slider in this case, without the aluminum post that is a feature of v.0.2. I’m considering removing the post entirely, and replacing it with a tripod ball head such as <a href="http://www.amazon.com/Manfrotto-701HDV-Fluid-Video-Mini/dp/B001AT314M/ref=sr_1_3?ie=UTF8&amp;qid=1352782213&amp;sr=8-3&amp;keywords=tripod">this</a> or <a href="http://www.amazon.com/Manfrotto-391RC2-Junior-Head-Replaces/dp/B001TK3ELC/ref=sr_1_6?ie=UTF8&amp;qid=1352782213&amp;sr=8-6&amp;keywords=tripod">this</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Source Code on Github]]></title>
+    <link href="http://cinemaker.us/2012/11/source-code-on-github/"/>
+    <updated>2012-11-01T00:00:00-06:00</updated>
+    <id>http://cinemaker.us/2012/11/source-code-on-github</id>
+    <content type="html"><![CDATA[<p>While I’ll use the <a href="http://www.thingiverse.com/thing:33368">Thingiverse page</a> as a once-in-a-while release area, I’ll be making most updates to the following github page:</p>
+
+<p>https://github.com/canadaduane/MakerSlider</p>
+
+<p>For example, I’ve updated the endcaps to actually have ends now (gasp!) and this sort of thing isn’t worthy of a release, so I’ve just updated the files on github.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Photos of MakerSlider 0.2]]></title>
+    <link href="http://cinemaker.us/2012/11/photos-of-makerslider-0-2/"/>
+    <updated>2012-11-01T00:00:00-06:00</updated>
+    <id>http://cinemaker.us/2012/11/photos-of-makerslider-0-2</id>
+    <content type="html"><![CDATA[<p><img src="https://dl.dropbox.com/s/azw75hjtkgdl2vf/makerslider-0.2-angle.jpg?dl=1" title="MakerSlider 0.2 Angle Shot" alt="" /></p>
+
+<p> </p>
+
+<p><img src="https://dl.dropbox.com/s/2wd6bh09spdqoun/makerslider-0.2-side.jpg?dl=1" title="MakerSlider 0.2 Side View" alt="" /></p>
+
+<p><img src="https://dl.dropbox.com/s/evdsbtdgjbrj6y2/makerslider-0.2-front2.jpg?dl=1" title="MakerSlider 0.2 Front View" alt="" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Manual Camera Slider v.0.2]]></title>
+    <link href="http://cinemaker.us/2012/10/manual-camera-slider-v-0-2/"/>
+    <updated>2012-10-29T00:00:00-06:00</updated>
+    <id>http://cinemaker.us/2012/10/manual-camera-slider-v-0-2</id>
+    <content type="html"><![CDATA[<p><img src="http://cinemaker.us/images/2012-10-00-makerslider-0.2.png" title="MakerSlider 0.2" alt="" /></p>
+
+<p>Technically, the first version of the Maker Slider was called the Weave Slider, and I posted about it on MakerHome.ca <a href="http://cinemaker.us/images/2012-10-00-makerslider-0.2.png" title="MakerSlider 0.2">1</a>. I didn’t release any files at the time–there weren’t any to release!–and so this time it’s a lot more satisfying to be able to release some STL files and OpenSCAD files that you can download or modify.</p>
+
+<p>All of the files are <a href="http://www.thingiverse.com/thing:33368">available on Thingiverse</a>, and will probably be updated periodically once I have my workflow set straight.</p>
+
+<p>For the tripod mounts (both on the base of the camera and on the bottom of the slider) I’ve chosen a small and fairly cheap tripod. Adam Sanders loaned me his base plate so I could create the specs. I anticipate that we will need to create several “base plate” compatible versions of the Maker Slider in order to accommodate various DSLR cameras as well as consumer cameras. I think what we have is a good place to start, but it isn’t enough either. We’ll develop the hardware as needed.</p>
+
+<p><a href="http://cinemaker.us/images/2012-10-00-makerslider-0.2.png" title="MakerSlider 0.2">1</a> http://makerhome.ca/weave-slider-v01-motorized-camera-slider</p>
 ]]></content>
   </entry>
   
