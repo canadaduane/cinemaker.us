@@ -4,14 +4,13 @@ author: Duane Johnson
 layout: post
 permalink: /2013/01/knobs-buttons-and-an-enclosure/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - buttons
   - electronics
   - pocket dolly
   - user interface
 ---
-# 
 
 Just before I shipped the first MakerSlider off to its (first!) owner, I built this enclosure for the 2 buttons and a knob:
 

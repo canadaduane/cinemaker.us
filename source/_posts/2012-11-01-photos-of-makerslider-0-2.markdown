@@ -10,7 +10,6 @@ tags:
   - EOS SD Mark II
   - photos
 ---
-# 
 
 ![][1]
 

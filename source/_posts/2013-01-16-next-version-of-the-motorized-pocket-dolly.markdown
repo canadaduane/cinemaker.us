@@ -4,13 +4,12 @@ author: Duane Johnson
 layout: post
 permalink: /2013/01/next-version-of-the-motorized-pocket-dolly/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - cinemaker
   - design
   - pocket dolly
 ---
-# 
 
 I’ve begun work on the next prototype version of the motorized pocket dolly (Tentatively called the Cinemaker Pocket Dolly). The [plans are up on Thingiverse][1] (new project) as well as [github][2] (same old project).
 

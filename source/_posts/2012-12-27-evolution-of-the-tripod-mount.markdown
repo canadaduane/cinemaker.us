@@ -4,9 +4,8 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/evolution-of-the-tripod-mount/
 categories:
-  - Uncategorized
+  - Design
 ---
-# 
 
 I thought it would be fun to see all of my failed attempts to create a tripod mount together in one shot. There were 4 unsatisfactory versions of the “universal tripod mount” before settling on the current design.
 
@@ -25,6 +24,4 @@ Next, I tried using a large washer as the “strong” piece–by putting a hex 
 
 I made a couple of early versions of the design now in use. Flimsy sides, too thin, etc.
 
-Finally, the design you see pictures in the makerslide is the final robust result of all of this R&D ![:)][3] It would be even better if cast in metal, but it seems to be strong enough for what I need. The flanged nut is the key “innovation” in this design–since the flange will keep the threaded nut snug and secure in the plastic, the threading is exposed directly on the surface of the tripod mount piece (which is ideal). In addition, the bolts that secure the tripod mount to the makerslide are recessed and won’t touch the tripod’s base plate.
-
- [3]: http://makerslider.com/wp/wp-includes/images/smilies/icon_smile.gif
+Finally, the design you see pictures in the makerslide is the final robust result of all of this R&D :) It would be even better if cast in metal, but it seems to be strong enough for what I need. The flanged nut is the key “innovation” in this design–since the flange will keep the threaded nut snug and secure in the plastic, the threading is exposed directly on the surface of the tripod mount piece (which is ideal). In addition, the bolts that secure the tripod mount to the makerslide are recessed and won’t touch the tripod’s base plate.

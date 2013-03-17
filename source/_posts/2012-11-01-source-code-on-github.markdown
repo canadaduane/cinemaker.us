@@ -4,9 +4,8 @@ author: Duane Johnson
 layout: post
 permalink: /2012/11/source-code-on-github/
 categories:
-  - Uncategorized
+  - Software
 ---
-# 
 
 While I’ll use the [Thingiverse page][1] as a once-in-a-while release area, I’ll be making most updates to the following github page:
 

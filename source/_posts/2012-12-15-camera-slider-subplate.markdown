@@ -4,13 +4,12 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/camera-slider-subplate/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - 3D printer
   - camera slider
   - STL
 ---
-# 
 
 I’ve been working on a 3D-printable version of the subplate that Bart Dring originally spec’ed in his [wiki page about the camera slider][1]. To my knowledge, he never released the specs for the subplate. Even if he did, I don’t have a laser cutter (well, I don’t have a **complete** and **fully functional** laser cutter). As a result, I’m remaking the parts in 3D form so that they can be printed. Here are some shots of the progress today.
 

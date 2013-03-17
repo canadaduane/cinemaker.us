@@ -4,22 +4,19 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/progress-on-barts-slider/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - 3D printer
   - buildlog
   - camera slider
   - motorized
 ---
-# 
 
 Today I built out most of the hardware for [Bart’s camera slider][1]. His design uses a moving motor–the motor is attached to a plate that connects orthogonally to the aluminum carriage. The motor then moves itself along a neoprene belt that runs the length of the camera slider.
 
  [1]: http://www.buildlog.net/wiki/doku.php?id=ms:ms_slider
 
-I made customized some of the parts from my MakerSlider v.0.3 (such as the endcaps) and adjusted them to hold the neoprene belt. Also custom designed is the subplate that Bart originally used a laser cutter to build. Since I have only a 3D printer at the moment, I need to use whatever I have available. And it’s so fun to make things in 3D anyway ![:)][2] 
-
- [2]: http://makerslider.com/wp/wp-includes/images/smilies/icon_smile.gif
+I made customized some of the parts from my MakerSlider v.0.3 (such as the endcaps) and adjusted them to hold the neoprene belt. Also custom designed is the subplate that Bart originally used a laser cutter to build. Since I have only a 3D printer at the moment, I need to use whatever I have available. And it’s so fun to make things in 3D anyway :)
 
 ![][3] 
 ![][4] 

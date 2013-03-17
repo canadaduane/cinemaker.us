@@ -4,12 +4,12 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/manfrotto-leads-to-drill-press/
 categories:
-  - Uncategorized
+  - Design
+  - Makerspace
 tags:
   - tools
   - video camera slider
 ---
-# 
 
 So after I picked up a Manfrotto Jr. ball head to be mounted on the slider carriage, I quickly discovered that the best way to mount it to the aluminum carriage would be to bolt it on directly—the [Manfrotto Jr. Head][1] comes with a 5/8″ threaded hole on the bottom.
 
@@ -19,9 +19,7 @@ But with a new, barebones shop comes limitations (and powers! don’t forget the
 
  [2]: https://www.inventables.com/technologies/standard-wheel-carriage-plate
 
-The green area on the surface near the hole is some bike chain oil that I’m using to ease the bit through the aluminum. I’m sure there’s something better to use out there, but it’s what I had on hand ![:)][3] 
-
- [3]: http://makerslider.com/wp/wp-includes/images/smilies/icon_smile.gif
+The green area on the surface near the hole is some bike chain oil that I’m using to ease the bit through the aluminum. I’m sure there’s something better to use out there, but it’s what I had on hand !:)
 
 ![][4] 
 ![][5] 

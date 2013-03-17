@@ -4,18 +4,16 @@ author: Duane Johnson
 layout: post
 permalink: /2012/11/universal-tripod-mount-for-makerslide/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - camera slider
   - home depot
   - nuts and bolts
 ---
-# 
 
-The [original tripod mount][1] (the part that connects a makerslide aluminum extrusion to a tripod) was built for a specific brand of tripod. My friend Adam isn’t sure what the brand is that he loaned me, so I’ll call it “generic” ![:)][2] 
+The [original tripod mount][1] (the part that connects a makerslide aluminum extrusion to a tripod) was built for a specific brand of tripod. My friend Adam isn’t sure what the brand is that he loaned me, so I’ll call it "generic" :)
 
  [1]: https://github.com/canadaduane/MakerSlider/blob/8119eab63e5cfb2be082ed0bd284f20de66ba120/tripod_mount.scad
- [2]: http://makerslider.com/wp/wp-includes/images/smilies/icon_smile.gif
 
 In any event, the mount piece did not prove generic enough across brands to be useful on its own. Just this week, in fact, Adam needed to attach the slider to two tripods–both of which happened to be different brands. I think this is a common use case–being able to adapt in the field to whatever equipment is available. So to help make the MakerSlider more robust to different tripod brands, I’ve created the “Universal Makerslide Tripod Mount”. It’s currently available for download at the [MakerSlider github project page][3].
 

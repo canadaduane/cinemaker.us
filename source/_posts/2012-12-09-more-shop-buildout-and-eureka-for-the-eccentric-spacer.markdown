@@ -4,13 +4,12 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/more-shop-buildout-and-eureka-for-the-eccentric-spacer/
 categories:
-  - Uncategorized
+  - Makerspace
 tags:
   - hackerspace
   - inventables
   - makerslide carriage
 ---
-# 
 
 This week i’ve been building out more of the shop–I’m excited to have an actual bench lining the far wall of the “fablab” / makerspace. Along the way, I’ve also been working on the slider’s carriage and ball head mounting.
 

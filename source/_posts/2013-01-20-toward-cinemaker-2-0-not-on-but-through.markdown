@@ -4,7 +4,7 @@ author: Duane Johnson
 layout: post
 permalink: /2013/01/toward-cinemaker-2-0-not-on-but-through/
 categories:
-  - Uncategorized
+  - Design
 tags:
   - camera slider
   - cinemaker
@@ -13,16 +13,17 @@ tags:
   - pocket dolly
   - video camera
 ---
-# 
 
 One of my goals for version 2.0 of the MakerSlider (soon to be called Cinemaker Pocket Dolly) was to move the motor from the sled to the end of the makerslide aluminum bar. I had been optimizing a design that would leave room for the 1/4″ timing belt to move underneath the sled (the part of the pocket dolly that I’ve previously been calling a “carriage”). This design would basically look like a thick elastic band on top of the aluminum bar with one end affixed to a motor and the other to an idler with ball bearings.
 
-![][1] 
-
+<div class="gallery">
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg"></a>
+  <a rel="gallery20130120" href="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg" class="fancybox"><img width="195" src="http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg"></a>
+</div>
 
 As I worked on the design, however, it soon became clear that it would be so much better if I could somehow tip the motor 90 degrees and attach the timing belt, flat side, on to the sled. As that idea percolated one night, I realized that the makerslide itself could accomodate this if I used the INSIDE of the aluminum as a transport for the timing belt! So, rather than having both sides of the timing belt under the sled, now we can have just one.
-
- [1]: http://thingiverse-production.s3.amazonaws.com/renders/fc/bf/61/e2/6c/2013-01-20-cinemaker-pd-overview_preview_featured.jpg
 
 The advantages to this design are several:
 
@@ -34,11 +35,3 @@ There are also some disadvantages:
 
 1.  It’s harder to get the timing belt in and out of the makerslide. Simply put, you have to get a timing belt with no backbone all the way through a 1-meter-long tube.
 2.  Possibility of “catching” on the edges: if the timing belt is not tensioned, there’s a chance it could bump against the ends of the makerslide and wear at the teeth.
-
-![][2] 
-![][3] 
-![][4]
-
- [2]: http://thingiverse-production.s3.amazonaws.com/renders/58/04/1d/a4/6d/2013-01-20-cinemaker-pd-idler_preview_featured.jpg
- [3]: http://thingiverse-production.s3.amazonaws.com/renders/c2/0f/08/35/3b/2013-01-20-cinemaker-pd-motor_preview_featured.jpg
- [4]: http://thingiverse-production.s3.amazonaws.com/renders/00/91/ed/2c/63/2013-01-20-cinemaker-pd-sled_preview_featured.jpg

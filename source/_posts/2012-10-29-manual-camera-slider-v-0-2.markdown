@@ -9,7 +9,6 @@ tags:
   - diy
   - video
 ---
-# 
 
 ![][1]
 

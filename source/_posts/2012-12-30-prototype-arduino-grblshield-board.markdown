@@ -4,7 +4,7 @@ author: Duane Johnson
 layout: post
 permalink: /2012/12/prototype-arduino-grblshield-board/
 categories:
-  - Uncategorized
+  - Hardware
 tags:
   - arduino uno
   - grbl
@@ -12,11 +12,8 @@ tags:
   - prototype board
   - switching bec
 ---
-# 
 
-A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for the Arduino. It can convert much higher voltage (up to 40V) but I don’t think I’ll be using that for now ![:)][1] 
-
- [1]: http://makerslider.com/wp/wp-includes/images/smilies/icon_smile.gif
+A switching BEC (battery elimination circuit) arrived from HobbyKing a couple of days ago. This converts my 12V battery power supply down to 5V for the Arduino. It can convert much higher voltage (up to 40V) but I don’t think I’ll be using that for now :)
 
 When all strapped together, the prototype board is quite a sight (ok, an ‘ugly’ sight if you ask me). It’s kind of cool to be able to put all of these pieces together, though, and get a programmable board that does exactly what’s needed: slide a camera back and forth using a stepper motor at variable speed.
 
