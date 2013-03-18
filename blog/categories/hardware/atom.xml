@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hardware | Cinemaker]]></title>
   <link href="http://cinemaker.us/blog/categories/hardware/atom.xml" rel="self"/>
   <link href="http://cinemaker.us/"/>
-  <updated>2013-03-17T17:45:37-06:00</updated>
+  <updated>2013-03-17T19:45:29-06:00</updated>
   <id>http://cinemaker.us/</id>
   <author>
     <name><![CDATA[Duane Johnson]]></name>
@@ -24,13 +24,15 @@
 
 <p>In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):</p>
 
-<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p>
+<blockquote><p>I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.</p></blockquote>
 
-<p> 
-|====================aluminum======================| 1 meter<br/>
-sensor>           [knob]            [knob]</p>
+<pre>
+|====================aluminum======================| 1 meter  
+sensor>           [knob]            [knob]
+</pre>
 
-<p>Basically, I want to recreate the functionality of a double "slide potentiometer" but the slide is 1m long. Each of the "[knob]" things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
+
+<blockquote><p>Basically, I want to recreate the functionality of a double "slide potentiometer" but the slide is 1m long. Each of the "[knob]" things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.</p>
 
 <p>I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads "tick" marks along the bottom, or a "spring-loaded" coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.</p>
 
