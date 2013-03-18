@@ -17,16 +17,12 @@ I’ve been racking my brains for the past couple of weeks trying to figure out 
 In frustration with my expensive or otherwise difficult-to-implement ideas, I sent the following email to my friends back in the Chicago hackerspace (PS1):
 
 > I want to be able to measure the distance from one end of an aluminum extrusion to two (variable) points along the length of the extrusion. e.g.
->
->
->
->  
-> |====================aluminum======================| 1 meter  
-> sensor>           [knob]            [knob]
->
->
-> 
->
+
+<pre>
+|====================aluminum======================| 1 meter  
+sensor>           [knob]            [knob]
+</pre>
+
 > Basically, I want to recreate the functionality of a double "slide potentiometer" but the slide is 1m long. Each of the "[knob]" things in the above blueprint is a knob that can slide the entire length of the aluminum extrusion.
 > 
 > I’ve considered many options for the sensor. Some measure relative distance (e.g. an optical mouse sensor that reads "tick" marks along the bottom, or a "spring-loaded" coil of string with a rotary encoder on the coil) and some measure absolute distance (e.g. an infrared sensor, an ultrasonic sensor, or a video camera). After giving it some thought, I think only the absolute distance measurements will work in this case, since I can’t know where the starting location of the knobs when the system is powered on.

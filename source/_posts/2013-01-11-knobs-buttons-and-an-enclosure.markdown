@@ -14,11 +14,11 @@ tags:
 
 Just before I shipped the first MakerSlider off to its (first!) owner, I built this enclosure for the 2 buttons and a knob:
 
-![][1] 
-![][2] 
-
+<div class="gallery">
+  <a rel="gallery20130111" href="/images/2013-01/2013-01-08 Panel Cover Off.jpg" class="fancybox"><img width="195" src="/images/2013-01/2013-01-08 Panel Cover Off.jpg"></a>
+  <a rel="gallery20130111" href="/images/2013-01/2013-01-08 Panel Inside.jpg" class="fancybox"><img width="195" src="/images/2013-01/2013-01-08 Panel Inside.jpg"></a>
+  <a rel="gallery20130111" href="/images/2013-01/2013-01-08 Panel.jpg" class="fancybox"><img width="195" src="/images/2013-01/2013-01-08 Panel.jpg"></a>
+  <a rel="gallery20130111" href="/images/2013-01/2013-01-08-control-panel-buttons.jpg" class="fancybox"><img width="195" src="/images/2013-01/2013-01-08-control-panel-buttons.jpg"></a>
+</div>
 
 The basic UI is simple: turn the knob to adjust speed, and then press a button (either “left” or “right”) to make the slider move left or right until it reaches the end. You can press a button again to (abruptly) stop the slider movement.
-
- [1]: https://www.dropbox.com/s/pj3uatn9qvyh9tc/2013-01-08 18.55.27.jpg?dl=1
- [2]: https://www.dropbox.com/s/6ajfgu9wmjm22qa/2013-01-08 19.23.24.jpg?dl=1

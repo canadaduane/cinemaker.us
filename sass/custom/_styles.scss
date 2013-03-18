@@ -24,6 +24,10 @@
   h1 {
     font-size: 40px;
     line-height: 40px;
+    @media screen and (max-width: 600px) {
+      font-size: 25px;
+      line-height: 25px;
+    }
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -31,6 +35,10 @@
   h2 {
     font-size: 25px;
     line-height: 25px;
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -56,6 +64,7 @@
     line-height: 50px;
     color: white;
     font-weight: bold;
+    font-size: 18px;
     margin: 5px 10px;
     text-align: center;
   }
